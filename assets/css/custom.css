@@ -14,16 +14,15 @@
     transform: translateY(100%);
     opacity: 0;
     pointer-events: none;
-    transition:
-            transform 0.3s ease,
-            opacity 0.3s ease;
+    transition: transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 /* 3) Make the <a> fill its container horizontally */
 .product_item .add_to_cart .add_to_cart_button {
     display: block;
     width: 100%;
-    padding: 0.75rem 1rem;  /* adjust vertical/horizontal padding as desired */
+    padding: 0.75rem 1rem; /* adjust vertical/horizontal padding as desired */
     text-align: center;
 }
 
@@ -33,3 +32,13 @@
     opacity: 1;
     pointer-events: auto;
 }
+
+
+.view_all_btn_headline {
+    margin-left: 1em;
+
+    h5 {
+        color: var(--themeColorTwo);
+    }
+}
+
