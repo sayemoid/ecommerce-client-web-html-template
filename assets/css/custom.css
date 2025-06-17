@@ -1,0 +1,35 @@
+/* 1) Make the image wrapper position relative */
+.product_item .product_img {
+    position: relative;
+    overflow: hidden; /* hide the button as it slides up/down */
+}
+
+/* 2) Absolutely position the button at the bottom of .product_img */
+.product_item .add_to_cart {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* push it fully below the image initially */
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+    transition:
+            transform 0.3s ease,
+            opacity 0.3s ease;
+}
+
+/* 3) Make the <a> fill its container horizontally */
+.product_item .add_to_cart .add_to_cart_button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem;  /* adjust vertical/horizontal padding as desired */
+    text-align: center;
+}
+
+/* 4) On hover, slide it into view */
+.product_item:hover .add_to_cart {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+}
