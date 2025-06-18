@@ -42,3 +42,11 @@
     }
 }
 
+
+/* Media query for screens smaller than the 'md' breakpoint (768px) */
+@media (max-width: 768px) {
+    /* Selects the product grid inside the special product section */
+    .special-products div:nth-child(n+5) {
+        display: none;
+    }
+}
