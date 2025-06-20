@@ -50,3 +50,59 @@
         display: none;
     }
 }
+
+
+/* Container for the tabs and button */
+.cat_tabs {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;       /* Allows items to wrap onto the next line */
+    align-items: center;   /* Keeps all items vertically aligned */
+    row-gap: 10px;         /* Adds vertical space ONLY when items wrap to a new line */
+    column-gap: 10px;      /* Adds horizontal space between items */
+}
+
+/* Styling for the regular tabs */
+.cat_tabs li a {
+    display: block;
+    padding: 8px 18px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+}
+
+/* Active tab style */
+.cat_tabs li a.pws_tab_active {
+    border-color: #f5b95b;
+    color: #d98d0e;
+    font-weight: bold;
+}
+
+/* This is the only rule needed to position the button */
+.cat_tabs .view_all_item {
+    /* This single line pushes the button to the end of the flex container */
+    margin-left: auto;
+
+    /* These are just for cleanup */
+    list-style-type: none;
+    padding-left: 10px; /* Adds a little space from the last tab */
+}
+
+/* Styling for the view all button link itself */
+.cat_tabs .view_all_btn {
+    border: none;
+    background: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .cat_tabs {
+        /*justify-content: center; !* Center the tabs on smaller screens *!*/
+        padding-top: 1rem;
+    }
+}
