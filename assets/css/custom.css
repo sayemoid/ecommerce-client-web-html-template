@@ -106,3 +106,12 @@
         padding-top: 1rem;
     }
 }
+
+.order_placed_actions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: center;
+    flex-wrap: nowrap;
+}
