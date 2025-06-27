@@ -1,0 +1,8 @@
+.theme-text-primary {
+    color: var(--themeColorTwo) !important;
+}
+
+.theme-btn-primary {
+    background-color: var(--themeColorTwo) !important;
+    color: white;
+}

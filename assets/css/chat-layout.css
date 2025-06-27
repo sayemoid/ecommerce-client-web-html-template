@@ -1,0 +1,99 @@
+/* Main container for the chat column */
+.chat-container-fixed {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 20px; /* Adjust this value based on your header's height or desired top margin */
+    height: calc(100vh - 40px); /* Full viewport height minus top/bottom margin */
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+/* Optional Header */
+.chat-header {
+    padding: 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    flex-shrink: 0; /* Prevents the header from shrinking */
+}
+
+/* The scrollable list of messages */
+.chat-list {
+    padding: 1rem;
+    flex-grow: 1; /* Takes up all available space */
+    overflow-y: auto; /* Enables vertical scrolling */
+    list-style: none; /* Removes bullet points */
+    margin: 0;
+}
+
+/* Individual chat message container */
+.chat-message {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+/* Aligning messages to the left (other person) */
+.chat-left {
+    justify-content: flex-start;
+}
+
+/* Aligning messages to the right (yours) */
+.chat-right {
+    justify-content: flex-end;
+}
+
+/* The chat bubble styling */
+.chat-bubble {
+    max-width: 85%;
+    padding: 0.75rem 1rem;
+    border-radius: 1.25rem;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Text inside the bubble */
+.chat-bubble .chat-text {
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+}
+
+/* Timestamp styling */
+.chat-bubble .chat-timestamp {
+    font-size: 0.75rem;
+    color: #888;
+    display: block;
+    margin-top: 0.25rem;
+}
+
+/* Specific styling for the other person's bubble */
+.chat-left .chat-bubble {
+    background-color: #e9e9eb;
+    color: #333;
+    border-bottom-left-radius: 0.25rem;
+}
+
+/* Specific styling for your bubble */
+.chat-right .chat-bubble {
+    background-color: rgb(from var(--themeColorTwo) r g b / 0.2);
+    border-bottom-right-radius: 0.25rem;
+}
+
+.chat-right .chat-bubble .chat-timestamp {
+    color: #939292;
+    text-align: right;
+}
+
+/* The fixed chatbox at the bottom */
+.chatbox-bottom {
+    padding: 1rem;
+    background-color: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    flex-shrink: 0; /* Prevents the chatbox from shrinking */
+}
