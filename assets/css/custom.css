@@ -24,6 +24,7 @@
     width: 100%;
     padding: 0.75rem 1rem; /* adjust vertical/horizontal padding as desired */
     text-align: center;
+    cursor: pointer;
 }
 
 /* 4) On hover, slide it into view */
