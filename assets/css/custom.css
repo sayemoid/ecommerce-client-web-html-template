@@ -59,10 +59,10 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap;       /* Allows items to wrap onto the next line */
-    align-items: center;   /* Keeps all items vertically aligned */
-    row-gap: 10px;         /* Adds vertical space ONLY when items wrap to a new line */
-    column-gap: 10px;      /* Adds horizontal space between items */
+    flex-wrap: wrap; /* Allows items to wrap onto the next line */
+    align-items: center; /* Keeps all items vertically aligned */
+    row-gap: 10px; /* Adds vertical space ONLY when items wrap to a new line */
+    column-gap: 10px; /* Adds horizontal space between items */
 }
 
 /* Styling for the regular tabs */
@@ -108,11 +108,25 @@
     }
 }
 
-.order_placed_actions{
+.order_placed_actions {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
     align-content: center;
     flex-wrap: nowrap;
+}
+
+.invoice_actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.pay-btn {
+    background-color: #7ac000 !important;
+    padding-left: 50px;
+    padding-right: 50px;
 }
