@@ -68,7 +68,7 @@
 /* Styling for the regular tabs */
 .cat_tabs li a {
     display: block;
-    padding: 8px 18px;
+    padding: 6px 18px;
     text-decoration: none;
     color: #333;
     border-radius: 20px;
@@ -80,7 +80,7 @@
 .cat_tabs li a.pws_tab_active {
     border-color: #f5b95b;
     color: #d98d0e;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* This is the only rule needed to position the button */
