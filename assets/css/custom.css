@@ -50,6 +50,13 @@
     .special-products div:nth-child(n+5) {
         display: none;
     }
+    .home-blog div:nth-child(n+3) {
+        display: none;
+    }
+    .home-best-selling div:nth-child(n+3) {
+        display: none;
+    }
+
 }
 
 
@@ -105,6 +112,15 @@
     .cat_tabs {
         /*justify-content: center; !* Center the tabs on smaller screens *!*/
         padding-top: 1rem;
+    }
+
+    .cat_tabs li a{
+        padding: 4px 18px;
+    }
+
+    .features_item {
+        padding: 10px;
+
     }
 }
 
