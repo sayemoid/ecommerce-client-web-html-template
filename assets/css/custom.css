@@ -41,6 +41,10 @@
     h5 {
         color: var(--themeColorTwo);
     }
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 
@@ -50,9 +54,11 @@
     .special-products div:nth-child(n+5) {
         display: none;
     }
+
     .home-blog div:nth-child(n+3) {
         display: none;
     }
+
     .home-best-selling div:nth-child(n+3) {
         display: none;
     }
@@ -114,7 +120,7 @@
         padding-top: 1rem;
     }
 
-    .cat_tabs li a{
+    .cat_tabs li a {
         padding: 4px 18px;
     }
 
@@ -145,4 +151,41 @@
     background-color: #7ac000 !important;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.view_all_btn_below {
+    display: none;
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        .view_all_btn {
+            border-bottom: 1px solid #ddd;
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--colorBlack);
+            text-transform: capitalize;
+            font-family: var(--headingFont);
+            position: relative;
+            padding-right: 30px;
+            transition: all linear .3s;
+            -webkit-transition: all linear .3s;
+        }
+        .view_all_btn::after {
+            position: absolute;
+            content: "";
+            background: url(../images/arrow_icon_black.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 25px;
+            height: 15px;
+            top: 4px;
+            right: 0;
+            transition: all linear .3s;
+            -webkit-transition: all linear .3s;
+            -moz-transition: all linear .3s;
+            -ms-transition: all linear .3s;
+            -o-transition: all linear .3s;
+        }
+    }
 }
