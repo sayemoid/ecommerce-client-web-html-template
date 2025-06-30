@@ -170,6 +170,7 @@
             transition: all linear .3s;
             -webkit-transition: all linear .3s;
         }
+
         .view_all_btn::after {
             position: absolute;
             content: "";
@@ -188,4 +189,28 @@
             -o-transition: all linear .3s;
         }
     }
+}
+
+.team-member-area {
+    display: flex;
+    justify-content: center;
+
+    .blog_img {
+        object-fit: fill;
+        /*height: auto !important;*/
+    }
+
+    @media (min-width: 576px) {
+        .blog_img {
+            height: 375px;
+        }
+    }
+}
+
+.team-member-item {
+    padding: 0 !important;
+}
+
+.team-member-text {
+    padding: 15px 15px 15px 15px !important;
 }
