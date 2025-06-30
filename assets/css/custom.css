@@ -214,3 +214,9 @@
 .team-member-text {
     padding: 15px 15px 15px 15px !important;
 }
+
+@media (max-width: 991px) {
+    .team-empty-col {
+        display: none;
+    }
+}
