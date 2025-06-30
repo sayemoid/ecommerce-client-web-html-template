@@ -220,3 +220,10 @@
         display: none;
     }
 }
+
+/*
+Probably need to remove later
+ */
+header .header_logo {
+    width: auto;
+}
