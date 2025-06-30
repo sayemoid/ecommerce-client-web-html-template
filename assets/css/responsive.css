@@ -5215,8 +5215,9 @@
     }
 
     .category_2 .category_item .img {
-        width: 150px;
-        height: 150px;
+        width: 70px;
+        height: 70px;
+        padding: 15px;
     }
 
     /*===========================
