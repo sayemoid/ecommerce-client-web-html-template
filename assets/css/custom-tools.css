@@ -6,3 +6,7 @@
     background-color: var(--themeColorTwo) !important;
     color: white;
 }
+
+.common_btn_red {
+    background: rgb(255 72 0 / 66%) !important;
+}

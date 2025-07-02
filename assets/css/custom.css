@@ -227,3 +227,11 @@ Probably need to remove later
 header .header_logo {
     width: auto;
 }
+
+.campaign-banner img {
+    object-fit: fill !important;
+}
+
+.campaign-img-txt {
+    background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 35%) 60%) !important;
+}
