@@ -235,3 +235,54 @@ header .header_logo {
 .campaign-img-txt {
     background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, rgb(0 0 0 / 35%) 60%) !important;
 }
+
+.beauty_countdown_area {
+    background: #ffa50014 !important;
+}
+
+@media (min-width: 1400px) {
+    .beauty_countdown_area .text {
+        max-width: 100%;
+    }
+
+    .beauty_countdown_area .text h2 {
+        font-size: 38px;
+        margin-top: 0;
+    }
+    .beauty_countdown_area .text p {
+        margin-bottom: 15px;
+    }
+    .campaign-right-col {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+        align-items: flex-end;
+    }
+}
+
+.beauty_countdown_area .loc-text {
+    color: #966100;
+}
+
+.beauty_countdown_area .upcoming-visit {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.beauty_countdown_area .home-booking-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .beauty_countdown_area .loc-text {
+        font-size: 14px;
+    }
+}
