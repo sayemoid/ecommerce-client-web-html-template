@@ -249,9 +249,11 @@ header .header_logo {
         font-size: 38px;
         margin-top: 0;
     }
+
     .beauty_countdown_area .text p {
         margin-bottom: 15px;
     }
+
     .campaign-right-col {
         display: flex;
         flex-direction: column;
@@ -284,5 +286,36 @@ header .header_logo {
 @media (max-width: 768px) {
     .beauty_countdown_area .loc-text {
         font-size: 14px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 1599.99px) {
+    .booking-section-item .text {
+        padding: 35px;
+        max-width: 100%;
+    }
+    .booking-section-item img {
+        object-fit: cover !important;
+    }
+}
+
+.booking-section-item {
+    @media (min-width: 576px) and (max-width: 767.99px) {
+        height: 780px;
+    }
+    @media (min-width: 767.99px) and (max-width: 991.99px) {
+        height: 920px;
+    }
+    @media (min-width: 992px) and (max-width: 1199.99px) {
+        height: 810px;
+    }
+    @media (min-width: 1200px) and (max-width: 1399.99px) {
+        height: 630px !important;
+    }
+    @media (min-width: 1400px) and (max-width: 1599.99px) {
+        height: 600px;
+    }
+    @media (min-width: 1600px) {
+        height: 600px;
     }
 }
