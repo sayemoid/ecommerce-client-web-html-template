@@ -294,6 +294,7 @@ header .header_logo {
         padding: 35px;
         max-width: 100%;
     }
+
     .booking-section-item img {
         object-fit: cover !important;
     }
@@ -317,5 +318,13 @@ header .header_logo {
     }
     @media (min-width: 1600px) {
         height: 600px;
+    }
+}
+
+.team-ceo-img {
+    background-color: white;
+    img {
+        object-fit: contain;
+        transform: translate(50px, 20px);
     }
 }
