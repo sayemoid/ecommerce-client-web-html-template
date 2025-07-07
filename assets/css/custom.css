@@ -1,7 +1,6 @@
 /* 1) Make the image wrapper position relative */
 .product_item .product_img {
     position: relative;
-    object-fit: contain !important;
     overflow: hidden; /* hide the button as it slides up/down */
 }
 
